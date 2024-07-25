@@ -72,7 +72,7 @@ const AboutPage = () => {
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-        I'm currently pursuing my B.Tech (Data Science and Artificial Intelligence) in woxsen university located in Hyderabad. I tend to observe and analyse.
+        I'm currently pursuing my MSIS in Northeastern university located in Boston. I tend to observe and analyse.
 <br /> <br/>
 I'm interested in the whole fullstack and Data science Like trying new things and building great projects. I'm an independent traveller. I love to travel and explore.
 <br/> <br/>

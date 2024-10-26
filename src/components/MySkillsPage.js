@@ -122,7 +122,7 @@ I believe in the smart efforts & efficient solution rather than the time we wast
 <Description>
 <strong>Skills</strong>
 <p>
-Python, Java, SQL, PowerBI, C, Software Project Management, Machine learning, Deep learning, React, Computer Vision, Html, Css, Js.
+Python, Java, SQL, Natural Language Processing PowerBI, TypeScript, Software Project Management, Machine learning, Deep learning, React.JS, Computer Vision, Html, Css, Kotlin, Js.
 </p>
 </Description>
 

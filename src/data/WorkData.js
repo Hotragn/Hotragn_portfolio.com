@@ -14,7 +14,7 @@ export const Work = [
         id:2,
         name:"Pantry Manager",
         description:"A platform allows you to organize, and effectively manage the pantry on daily basis",
-        tags:["Typescript",,"JavaScript","MaterialUI","CSS","FireBase"],
+        tags:["Typescript","JavaScript","MaterialUI","CSS","FireBase"],
         
         demo:"https://pantrynex.vercel.app/",
         github:"https://github.com/Hotragn/Pantry-Nex"

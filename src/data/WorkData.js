@@ -19,4 +19,5 @@ export const Work = [
         demo:"https://pantrynex.vercel.app/",
         github:"https://github.com/Hotragn/Pantry-Nex"
     },
+    
 ] 

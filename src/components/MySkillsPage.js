@@ -150,7 +150,6 @@ import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 // Enhanced Rubik's Cube Animation

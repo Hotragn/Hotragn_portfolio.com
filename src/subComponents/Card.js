@@ -94,27 +94,6 @@ const Item = {
     }
 }
 
-
-//added newly 2024-nov
-// In your Card component
-const CardContainer = styled(motion.li)`
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 15px;
-  padding: 20px;
-  margin: 10px;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-5px);
-    background: rgba(255,255,255,0.15);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  }
-`;
-
-
-
 const Card = (props) => {
 
     const {id, name, description, tags, demo, github} = props.data;

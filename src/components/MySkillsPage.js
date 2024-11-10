@@ -149,7 +149,6 @@ import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const rotate = keyframes`
   0% { transform: rotateX(0) rotateY(0) rotateZ(0); }

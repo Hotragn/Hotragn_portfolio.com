@@ -6,7 +6,7 @@ export const Blogs = [
         name:"Optimizing the E-Commerce Shopping Cart: A UI/UX Design Plan for seamless shopping",
         tags:["UI/UX","Shopping Cart Enhancement","Redisigning","Analysis"],
         date:"30 September, 2024",
-        imgSrc:"https://cdn.hashnode.com/res/hashnode/image/upload/v1687186023289/5fe34e04-731e-4d48-bdbb-f8898fb726f9.avif?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+        imgSrc:"https://img.freepik.com/free-vector/gradient-style-ui-ux-background_52683-69621.jpg?t=st=1731228848~exp=1731232448~hmac=bce2a292b5b778d4fd3c6b9df737bc6e2377fb1b9617d708c41d8db0638bbe7e&w=1060",
         link:"https://pettugani.hashnode.dev/data-science-riding-the-wave-of-innovation"
     },
     {

@@ -140,6 +140,7 @@
 
 // export default MySkillsPage
 
+
 import React, { useState } from 'react';
 import styled, { ThemeProvider, keyframes } from 'styled-components';
 import { lightTheme } from './Themes';
@@ -149,7 +150,10 @@ import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
+// Enhanced Rubik's Cube Animation
 const rotate = keyframes`
   0% { transform: rotateX(0) rotateY(0) rotateZ(0); }
   100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
@@ -158,19 +162,11 @@ const rotate = keyframes`
 const Box = styled.div`
   background-color: ${props => props.theme.body};
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 2rem;
-  gap: 2rem;
-
-  @media (max-width: 1200px) {
-    flex-direction: column;
-    padding: 1rem;
-  }
 `;
 
 const Main = styled.div`
@@ -178,9 +174,8 @@ const Main = styled.div`
   color: ${props => props.theme.text};
   background-color: ${props => props.theme.body};
   padding: 2rem;
-  width: min(30vw, 500px);
-  min-height: 60vh;
-  height: auto;
+  width: 30vw;
+  height: 60vh;
   z-index: 3;
   line-height: 1.5;
   cursor: pointer;
@@ -188,16 +183,9 @@ const Main = styled.div`
   font-family: 'Ubuntu Mono', monospace;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   position: relative;
   transition: all 0.3s ease;
-  flex: 1;
-
-  @media (max-width: 1200px) {
-    width: 90vw;
-    min-height: auto;
-    margin: 2rem 0;
-  }
 
   &:hover {
     color: ${props => props.theme.body};
@@ -206,16 +194,13 @@ const Main = styled.div`
   }
 `;
 
+// Skills Section Components
 const SkillsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
   width: 100%;
-  
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
 `;
 
 const SkillCard = styled.div`
@@ -227,8 +212,7 @@ const SkillCard = styled.div`
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  min-height: 100px;
-  height: auto;
+  height: 100px;
   position: relative;
   overflow: hidden;
 
@@ -259,7 +243,6 @@ const SkillName = styled.h4`
   font-size: 0.9rem;
   text-align: center;
   color: inherit;
-  word-wrap: break-word;
 `;
 
 const SkillLevel = styled.div`
@@ -280,6 +263,7 @@ const SkillLevel = styled.div`
   }
 `;
 
+// Rubik's Cube Components
 const RubiksCube = styled.div`
   position: absolute;
   top: -50px;
@@ -288,13 +272,6 @@ const RubiksCube = styled.div`
   height: 60px;
   perspective: 1000px;
   display: ${props => props.show ? 'block' : 'none'};
-
-  @media (max-width: 768px) {
-    width: 40px;
-    height: 40px;
-    top: -30px;
-    right: -30px;
-  }
 `;
 
 const Cube = styled.div`
@@ -309,8 +286,8 @@ const Cube = styled.div`
 
 const CubeFace = styled.div`
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 60px;
+  height: 60px;
   border: 2px solid ${props => props.theme.text};
   background: ${props => props.color};
   display: grid;
@@ -323,12 +300,6 @@ const CubeFace = styled.div`
   &.left   { transform: rotateY(-90deg) translateZ(30px); }
   &.top    { transform: rotateX(90deg) translateZ(30px); }
   &.bottom { transform: rotateX(-90deg) translateZ(30px); }
-
-  @media (max-width: 768px) {
-    &.front, &.back, &.right, &.left, &.top, &.bottom {
-      transform: translateZ(20px);
-    }
-  }
 `;
 
 const Title = styled.h2`
@@ -336,7 +307,6 @@ const Title = styled.h2`
   justify-content: center;
   align-items: center;
   font-size: calc(1em + 1vw);
-  margin-bottom: 1rem;
 
   ${Main}:hover &{
     &>*{
@@ -353,7 +323,6 @@ const Description = styled.div`
   color: ${props => props.theme.text};
   font-size: calc(0.6em + 1vw);
   padding: 0.5rem 0;
-  flex-grow: 1;
 
   ${Main}:hover &{
     color:${props => props.theme.body};
@@ -362,21 +331,17 @@ const Description = styled.div`
   strong{
     margin-bottom: 1rem;
     text-transform: uppercase;
-    display: block;
   }
-  
   ul,p{
     margin-left: 2rem;
-    margin-bottom: 1rem;
   }
 `;
 
 // Skills data
 const skillsData = [
   { name: 'Python', color: '#3776AB', level: 90, icon: '👨🏻‍💻' },
-  { name: 'Machine Learning & Deep Learning', color: '#FF6B6B', level: 85, icon: '🧠🤖' },
-  { name: 'NLP', color: '#9966FF', level: 75, icon: '💬' },
-  { name: 'Computer Vision', color: '#36A2EB', level: 80, icon: '👁️' },
+  { name: 'Deep Learning & Computer Vision', color: '#FF6B6B', level: 85, icon: '🧠👁️' },
+  { name: 'Machine Learning & NLP', color: '#9966FF', level: 75, icon: '💬 🤖' },
   { name: 'React.js', color: '#61DAFB', level: 85, icon: '⚛️' },
   { name: 'TypeScript', color: '#3178C6', level: 75, icon: '📘' },
   { name: 'Java', color: '#007396', level: 80, icon: '☕' }

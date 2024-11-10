@@ -340,7 +340,7 @@ const Description = styled.div`
 // Skills data
 const skillsData = [
   { name: 'Python', color: '#3776AB', level: 90, icon: '👨🏻‍💻' },
-  { name: 'Machine Learning, Deep Learning', color: '#FF6B6B', level: 85, icon: '🤖','🧠' },
+  { name: 'Machine Learning & Deep Learning', color: '#FF6B6B', level: 85, icon: '🤖','🧠' },
   { name: 'NLP', color: '#9966FF', level: 75, icon: '💬' },
   { name: 'Computer Vision', color: '#36A2EB', level: 80, icon: '👁️' },
   { name: 'React.js', color: '#61DAFB', level: 85, icon: '⚛️' },

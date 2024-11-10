@@ -140,7 +140,11 @@
 
 // export default MySkillsPage
 
-import React, { useState } from 'react';
+
+import { useState } from 'react';
+import styled, { ThemeProvider, keyframes } from 'styled-components';
+import { lightTheme } from './Themes';
+import { Design, Develope } from './AllSvgs';
 import styled, { ThemeProvider, keyframes } from 'styled-components';
 // ... (previous imports remain the same)
 

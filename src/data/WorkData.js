@@ -31,7 +31,7 @@ export const Work = [
     {
         id:4,
         name:"Customer Sales Analytics Dashboard_PowerBI",
-        description:"In this report, I've focused on creating an optimized data model following industry best practices using STAR schema data model with a fact table, with careful attention to detail in data transformation and calculations.",
+        description:"I've focused on creating optimized data model following industry best practices using STAR schema data model(fact table), with careful attention to detail in data transformation & calculations.",
         tags:["PowerBI","DataScience","DataAnalysis","Exploratory Data Analysis"],
         
         demo:"https://app.powerbi.com/view?r=eyJrIjoiZTJmYzQyMmEtYmU2MC00ZTliLThkNDAtOTYzYThhMDI4MWZhIiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9"

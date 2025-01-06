@@ -26,7 +26,7 @@ export const Work = [
         description:"This project using Power BI is a comprehensive solution for analyzing and visualizing sales performance and customer behavior over multiple segments, regions, and timeline.",
         tags:["PowerBI","DataScience","DataAnalysis","Exploratory Data Analysis"],
         
-        demo:"https://app.powerbi.com/reportEmbed?reportId=19c88c5c-c372-4f54-8fd6-b785a4a21ae1&autoAuth=true&ctid=eaf7202d-efb3-437a-a103-505bb9fbf75f"
+        demo:"https://app.powerbi.com/view?r=eyJrIjoiZTBmZTUzM2QtZjdjMy00MGZkLWJiZjctYWVkMzFjYmYwOWU4IiwidCI6ImE4ZWVjMjgxLWFhYTMtNGRhZS1hYzliLTlhMzk4YjkyMTVlNyIsImMiOjN9"
     },
     
 ] 
